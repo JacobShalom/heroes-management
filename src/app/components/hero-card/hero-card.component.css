@@ -1,0 +1,31 @@
+.card {
+    width: 350px;
+    margin: 0px auto auto auto;
+  }
+  .expandable-content {
+    overflow: hidden;
+  }
+  .mat-card {
+    background-color: rgba(1, 32, 53);
+  }
+
+  
+a:hover {
+    background-color: black;
+  }
+  
+  
+  
+  
+  button.edit:hover {
+    background-color: #6372f3;
+    color: white;
+  }
+    
+
+  
+  button.delete:hover {
+    background-color: #db4b4b;
+    color: white;
+  }
+

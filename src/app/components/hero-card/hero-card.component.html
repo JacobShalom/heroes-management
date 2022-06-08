@@ -1,0 +1,37 @@
+<div *ngIf="hero">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>{{hero.heroName | uppercase}} </mat-card-title>
+        <mat-card-subtitle>
+          <li>
+              power >  {{hero.power}}/10
+          </li>
+           <li>
+              ability >  {{abilityDesc}}
+           </li>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p [@bodyExpansion]="state" class="expandable-content">
+            <li>
+              created at : {{hero.createdDate | date:'dd/MM/yyyy HH:mm' }}
+            </li>
+            <li>
+              id : {{hero.id}}
+            </li>
+            <button  mat-raised-button color="accent" title="delete hero" class="delete"
+            (click)="delete(hero)">Delete {{hero.heroName}}
+          </button>
+          &nbsp;
+          <button  mat-raised-button color="accent" title="edit hero" class="edit"
+          (click)="edit(hero)">Edit {{hero.heroName}}
+        </button>
+        </p>
+        <mat-divider>
+        </mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button (click)="toggle()" color="accent">{{state==='collapsed'?'Expand':'Collapse'}}</button>
+      </mat-card-actions> 
+    </mat-card>
+  </div>

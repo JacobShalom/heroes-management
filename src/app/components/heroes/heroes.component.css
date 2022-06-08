@@ -1,0 +1,20 @@
+
+mat-grid-tile {
+  background: rgb(247, 247, 244);
+}
+
+h2 {
+  text-align: center;
+}
+
+button.newHero {
+  float:right;
+  color: white;
+  margin-right: 40px;
+}
+  
+button.newHero:hover {
+  background-color: #6372f3;
+  color: white;
+}
+  

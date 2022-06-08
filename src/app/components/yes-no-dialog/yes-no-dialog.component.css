@@ -1,0 +1,18 @@
+.dialog{
+    background-color: rgba(202, 207, 211);
+    padding:20px;
+  }
+
+ 
+  
+  button.dialog-no:hover {
+    background-color: #6372f3;
+    color: white;
+  }
+    
+
+  
+  button.dialog-yes:hover {
+    background-color: #db4b4b;
+    color: white;
+  }
